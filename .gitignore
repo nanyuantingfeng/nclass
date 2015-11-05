@@ -1,0 +1,9 @@
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+/app/bower_components
+/.idea
+nclass.iml
+nclass.ipr
+nclass.iws
