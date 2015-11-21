@@ -1,0 +1,22 @@
+{
+    "name":"nclass",
+    "version":"1.0.0",
+    "description":"",
+    "main":"demo.js",
+    "dependencies":{
+    },
+    "devDependencies":{},
+    "scripts":{
+        "test":"echo \"Error: no test specified\" && exit 1"
+    },
+    "repository":{
+        "type":"git",
+        "url":"git+https://github.com/nanyuantingfeng/nclass.git"
+    },
+    "author":"",
+    "license":"ISC",
+    "bugs":{
+        "url":"https://github.com/nanyuantingfeng/nclass/issues"
+    },
+    "homepage":"https://github.com/nanyuantingfeng/nclass#readme"
+}
