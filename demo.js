@@ -6,22 +6,11 @@
 var nfix = require("nfix");
 var Class = nfix.Class;
 
-var p1 = new Promise(function(resolve, reject) {
-    setTimeout(resolve, 10, "one");
-});
-var p2 = new Promise(function(resolve, reject) {
-    setTimeout(resolve, 10, "two");
-});
-var p3 = new Promise(function(resolve, reject) {
-    setTimeout(resolve, 10, "three");
-});
-var p4 = new Promise(function(resolve, reject) {
-    setTimeout(resolve, 10, "four");
-});
-var p5 = new Promise(function(resolve, reject) {
-    // reject("reject");
-    resolve(10000)
-});
+var p1 = new Promise((resolve, reject) =>  setTimeout(resolve, 10, "one"));
+var p2 = new Promise((resolve, reject) =>  setTimeout(resolve, 10, "two"));
+var p3 = new Promise((resolve, reject) =>  setTimeout(resolve, 10, "three"));
+var p4 = new Promise((resolve, reject) =>  setTimeout(resolve, 10, "four"));
+var p5 = new Promise((resolve, reject) =>  resolve(10000));
 
 var arr = [p1, p2, p3, p4, p5];
 
