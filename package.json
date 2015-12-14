@@ -1,20 +1,18 @@
 {
     "name":"nclass",
-    "version":"1.0.0",
-    "description":"",
-    "main":"demo.js",
+    "version":"1.4.0",
+    "description":"A implementation of js class inheritance",
+    "main":"index.js",
     "dependencies":{
     },
-    "devDependencies":{},
     "scripts":{
-        "test":"echo \"Error: no test specified\" && exit 1"
     },
     "repository":{
         "type":"git",
         "url":"git+https://github.com/nanyuantingfeng/nclass.git"
     },
-    "author":"",
-    "license":"ISC",
+    "author":"nanyuantingfeng",
+    "license":"MIT",
     "bugs":{
         "url":"https://github.com/nanyuantingfeng/nclass/issues"
     },
