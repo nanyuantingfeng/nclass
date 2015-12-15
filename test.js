@@ -3,7 +3,7 @@
  * Timestamp : 1/27/15 15:44
  **********************************************/
 
-var Class = require("../index").Class;
+var Class = require("./index").Class;
 
 var A = Class(Object);
 
