@@ -1,6 +1,6 @@
 {
     "name":"nclass",
-    "version":"1.5.1",
+    "version":"1.5.3",
     "description":"A implementation of js class inheritance",
     "main":"index.js",
     "dependencies":{

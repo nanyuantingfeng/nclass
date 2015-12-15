@@ -20,7 +20,7 @@ Example
 
 var Class = require('nclass').Class;
 
- //class A inheritance Object
+ //class A inherited from Object
 var A = Class(Object); 
 
 // A.fn <===> A.prototype;
@@ -28,7 +28,7 @@ A.fn.getA = function(){
     return this.a;
 }
 
-//class B inheritance A
+//class B inherited from  A
 var B = Class(A , function(a,b){  
     this.a = a;
     this.b = b;
