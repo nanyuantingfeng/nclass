@@ -1,8 +1,13 @@
 {
     "name":"nclass",
-    "version":"1.5.3",
-    "description":"A implementation of js class inheritance",
+    "version":"1.5.4",
+    "description":"a implementation of js class inheritance",
     "main":"index.js",
+    "keywords":[
+        "class",
+        "inheritance",
+        "extend"
+    ],
     "dependencies":{
     },
     "scripts":{
