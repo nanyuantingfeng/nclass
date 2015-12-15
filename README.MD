@@ -1,6 +1,6 @@
 nclass.js
 =========
-### A implementation of js class inheritance
+### a implementation of js class inheritance
  
 
 Installation
