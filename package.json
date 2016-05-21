@@ -1,25 +1,25 @@
 {
-    "name":"nclass",
-    "version":"1.5.5",
-    "description":"a implementation of js class inheritance",
-    "main":"index.js",
-    "keywords":[
-        "class",
-        "inheritance",
-        "extend"
-    ],
-    "dependencies":{
-    },
-    "scripts":{
-    },
-    "repository":{
-        "type":"git",
-        "url":"git+https://github.com/nanyuantingfeng/nclass.git"
-    },
-    "author":"nanyuantingfeng",
-    "license":"MIT",
-    "bugs":{
-        "url":"https://github.com/nanyuantingfeng/nclass/issues"
-    },
-    "homepage":"https://github.com/nanyuantingfeng/nclass#readme"
+  "name":"nclass",
+  "version":"1.6.0",
+  "description":"a implementation of js class inheritance",
+  "main":"index.js",
+  "keywords":[
+    "class",
+    "inheritance",
+    "extend"
+  ],
+  "dependencies":{
+  },
+  "scripts":{
+  },
+  "repository":{
+    "type":"git",
+    "url":"git+https://github.com/nanyuantingfeng/nclass.git"
+  },
+  "author":"nanyuantingfeng",
+  "license":"MIT",
+  "bugs":{
+    "url":"https://github.com/nanyuantingfeng/nclass/issues"
+  },
+  "homepage":"https://github.com/nanyuantingfeng/nclass#readme"
 }
