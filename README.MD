@@ -1,7 +1,5 @@
 nclass.js
 =========
-### a implementation of js class inheritance
- 
 
 Installation
 ------------
@@ -11,7 +9,6 @@ Install with `npm`:
 ``` bash
 $ npm install --save nclass
 ```
-
 
 Example
 -------
@@ -33,20 +30,24 @@ var B = Class(A , function(a,b){
     this.b = b;
 });      
 
-// create instance whiteout keyword `new`.
+// create instance keyword `new` is optional.
 var b = /**new**/ B(1,2); 
 
-var aa = b.getA() ; // aa === 1;
+b.getA(); //1;
 
 var C = Class(B, function(){
-        B.initialize.apply(this, arguments);
+    B.initialize.apply(this, arguments);
 })
 
- // B.initialize <===> function(a,b){ this.a = a;  this.b = b;  }
+/****
+ *B.initialize 
+ *<===> 
+ *function(a,b){ this.a = a;  this.b = b;  }
+ ****/
 
 var c = /**new**/ C(22,33);
 
-var cc = c.getA() ; // cc === 22; 
+c.getA() ; // cc === 22; 
  
 ```
 
