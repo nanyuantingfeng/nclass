@@ -3,41 +3,43 @@
  * Timestamp : 1/27/15 15:38
  **********************************************/
 
-function Class(Super, init) {
-  var N, NEW;
+/**
+ * @param Super
+ * @param initialize
+ * @returns {NEW|*}
+ * @constructor : {
+ *  value : NEW, 
+ *  enumerable : false, 
+ *  writable : true, 
+ *  configurable : true 
+ * }
+ */
+function Class(Super, initialize) {
+  var N, NEW, _;
   N = function() {};
-  init = init || N;
+  initialize = initialize || N;
   N.prototype = Super.prototype;
-  NEW = function() {
-    return new NEW.fn.initialize(arguments);
-  };
+  _ = function() { initialize.apply(this, arguments[0])};
+  NEW = function() { return new _(arguments)};
   NEW.fn = NEW.prototype = new N();
-  NEW.fn.initialize = function(M) {
-    init.apply(this, M);
-    return this
-  };
   NEW.fn.constructor = NEW;
-  NEW.fn.initialize.prototype = NEW.fz = NEW.fn;
-  NEW.initialize = init;
+  _.prototype = NEW.fn;
+  NEW.initialize = initialize;
   return NEW;
 }
 
-function Class2(Super, init) {
+function inherit(Super, initialize) {
   var N, NEW;
   N = function() {};
-  init = init || N;
+  NEW = initialize || N;
   N.prototype = Super.prototype;
-  NEW = function() {
-    init.apply(this, arguments);
-    return this;
-  };
   NEW.fn = NEW.prototype = new N();
   NEW.fn.constructor = NEW;
-  NEW.initialize = init;
+  NEW.initialize = initialize;
   return NEW;
 }
 
-module.exports['default'] = Class;
-module.exports.Class = Class;
-module.exports.Class2 = Class2; 
+exports['default'] = Class;
+exports.Class = Class;
+exports.inherit = inherit;
 

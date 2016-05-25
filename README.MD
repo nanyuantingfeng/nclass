@@ -22,7 +22,6 @@ var Class = require('nclass').Class;
 
  //class A inherited from Object
 var A = Class(Object); 
-
 // A.fn <===> A.prototype;
 A.fn.getA = function(){  
     return this.a;
@@ -35,20 +34,19 @@ var B = Class(A , function(a,b){
 });      
 
 // create instance whiteout keyword `new`.
-var b = B(1,2); 
+var b = /**new**/ B(1,2); 
 
 var aa = b.getA() ; // aa === 1;
 
 var C = Class(B, function(){
-      B.initialize.apply(this, arguments);
+        B.initialize.apply(this, arguments);
 })
 
  // B.initialize <===> function(a,b){ this.a = a;  this.b = b;  }
 
-var c = C(22,33);
+var c = /**new**/ C(22,33);
 
 var cc = c.getA() ; // cc === 22; 
-
  
 ```
 
