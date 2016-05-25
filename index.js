@@ -42,4 +42,3 @@ function inherit(Super, initialize) {
 exports['default'] = Class;
 exports.Class = Class;
 exports.inherit = inherit;
-
