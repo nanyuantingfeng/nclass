@@ -1,6 +1,6 @@
 {
   "name":"nclass",
-  "version":"1.7.1",
+  "version":"1.7.2",
   "description":"An Implementation Of JavaScript Class Inheritance <Base Prototype>",
   "main":"index.js",
   "keywords":[

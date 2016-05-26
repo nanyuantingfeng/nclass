@@ -19,11 +19,14 @@ function Class(Super, initialize) {
   N = function() {};
   initialize = initialize || N;
   N.prototype = Super.prototype;
-  _ = function() { initialize.apply(this, arguments[0])};
-  NEW = function() { return new _(arguments)};
-  NEW.fn = NEW.prototype = new N();
+  NEW = function() {
+    return new _(arguments)
+  };
+  _ = function() {
+    initialize.apply(this, arguments[0]);
+  };
+  _.prototype = NEW.fn = NEW.prototype = new N();
   NEW.fn.constructor = NEW;
-  _.prototype = NEW.fn;
   NEW.initialize = initialize;
   return NEW;
 }
@@ -35,10 +38,10 @@ function inherit(Super, initialize) {
   N.prototype = Super.prototype;
   NEW.fn = NEW.prototype = new N();
   NEW.fn.constructor = NEW;
-  NEW.initialize = initialize;
   return NEW;
 }
 
-exports['default'] = Class;
-exports.Class = Class;
-exports.inherit = inherit;
+Class.Class = Class;
+Class.inherit = inherit;
+
+module.exports = Class;
