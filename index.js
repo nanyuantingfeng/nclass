@@ -31,17 +31,4 @@ function Class(Super, initialize) {
   return NEW;
 }
 
-function inherit(Super, initialize) {
-  var N, NEW;
-  N = function() {};
-  NEW = initialize || N;
-  N.prototype = Super.prototype;
-  NEW.fn = NEW.prototype = new N();
-  NEW.fn.constructor = NEW;
-  return NEW;
-}
-
-Class.Class = Class;
-Class.inherit = inherit;
-
-module.exports = Class;
+module.exports = Class.Class = Class;
